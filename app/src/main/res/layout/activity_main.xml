@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+    <!-- Viewの記載順によってレイヤが異なる。上から記述された順に下のレイヤになるので、 -->
+    <!-- ImageViewとTextViewの順番を入れ替えるとTextViewが見えなくなる -->
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:rotation="-10"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:src="@drawable/present"/>
+
+    <TextView
+        android:id="@+id/happyBirthdayTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Happy Birthday, Yurina!"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="36sp"
+        android:fontFamily="cursive"
+        android:textColor="@android:color/holo_blue_bright"
+        android:padding="20dp"
+        />
+    <TextView
+        android:id="@+id/myPresent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="It's my present for you."
+        android:layout_below="@id/happyBirthdayTo"
+        android:textSize="24sp"
+        android:fontFamily="cursive"
+        android:textColor="@android:color/holo_orange_light"
+        android:layout_marginLeft="30dp"
+        />
+
+    <TextView
+        android:id="@+id/happyBirthdayFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From Koji."
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="36sp"
+        android:fontFamily="cursive"
+        android:textColor="@android:color/holo_blue_bright"
+        android:padding="20dp"
+        />
+
+</RelativeLayout>
