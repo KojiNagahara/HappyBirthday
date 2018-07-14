@@ -35,7 +35,7 @@
         android:id="@+id/myPresent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="It's my present for you."
+        android:text="Present for you."
         android:layout_below="@id/happyBirthdayTo"
         android:textSize="24sp"
         android:fontFamily="cursive"
